@@ -1,0 +1,84 @@
+Question 1
+function InstagramPost(HandleOfAuthor, Content, AnImageLink, NumberOfLikes)
+{
+    this.HandleofAuthor=HandleOfAuthor;
+    this.Content=Content;
+    this.Numbersof NumberOfViews=NumberOfViews;
+    this.NumbersofLikes=NumberOfLikes
+}
+
+
+Question 2
+const instagramPost2=new InstagramPost ('@s2weh', 'oil spillage', 'www.instapost2.com', 676, 122);
+console.log(instagramPost2);
+
+const instagramPost3=new InstagramPost('@ais4ada', 'churchgist', 'www.instapost3.com', '1.4k', 374);
+console.log(instagramPost3);
+
+
+Question 3
+function Musa(firstName, lastName, age, location){
+    return{
+        firstName:firstName,
+        lastName:lastName,
+        age:age,
+        location:location,
+    }
+}
+const student=Musa ('Musa', 'Dawodu', 19, 'Lekki, Lagos state');
+console.log(student);
+
+const jambscores= {
+    Eng :70,
+    Govt : 85,
+    Lit : 82,
+    Crk : 94
+}
+console.log(jambScores);
+student.jambScores=jambScores
+
+console.log(student);
+
+
+Question 4
+Different Ways To Clone An Object With Examples
+
+Objects.assign
+const firstDrink={
+    brand : 'Fanta',
+    color : 'orange'
+    taste : 'sugary'
+
+}
+const secondDrink=firstDrink;
+console.log(secondDrink)
+secondDrink.brand= 'BitterLemon';
+secondDrink.color= 'Green';
+console.log(secondDrink);
+
+Spread syntax
+const thirdDrink={...firstDrink};
+thirdDrink.brand='sprite';
+console.log({thirdDrink});
+
+JSON.parse()
+const fourthdrink=JSON.parse(JSON.stringify(firstDrink));
+console.log({fourthDrink});
+fourthDrink.brand='Tonic water'
+console.log({fourthDrink});
+
+Question 5
+Using Enumeration Methods To Log Out Each Of The presidentialCandidates
+
+Using FOR...IN
+const presidentialcandidates={
+    AAC :     'Omoyele Sowore
+    ACCORD :  'Christopher Imumolen'
+    APC :     'Bola Ahmed Tinubu',
+    LP :      'Peter Obi'
+    NNPP :    'Rabiu Kwankwaso'
+    PDP :     'Atiku Abubakar'
+}
+for(const party in presidentialcandidates){
+    console.log(presidentialcandidates[party] + ' is the presidential candidate of ' +party);
+}
